@@ -113,4 +113,105 @@ F 3 "" H 6800 3900 50  0001 C CNN
 	1    6800 3900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 5FB80264
+P 6350 2700
+F 0 "R?" V 6143 2700 50  0000 C CNN
+F 1 "1500" V 6234 2700 50  0000 C CNN
+F 2 "" V 6280 2700 50  0001 C CNN
+F 3 "~" H 6350 2700 50  0001 C CNN
+	1    6350 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FB8173A
+P 6350 1750
+F 0 "R?" V 6143 1750 50  0000 C CNN
+F 1 "1500" V 6234 1750 50  0000 C CNN
+F 2 "" V 6280 1750 50  0001 C CNN
+F 3 "~" H 6350 1750 50  0001 C CNN
+	1    6350 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FB8241D
+P 6350 3700
+F 0 "R?" V 6143 3700 50  0000 C CNN
+F 1 "1500" V 6234 3700 50  0000 C CNN
+F 2 "" V 6280 3700 50  0001 C CNN
+F 3 "~" H 6350 3700 50  0001 C CNN
+	1    6350 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FB865C7
+P 2800 3300
+F 0 "#PWR?" H 2800 3050 50  0001 C CNN
+F 1 "GND" V 2805 3172 50  0000 R CNN
+F 2 "" H 2800 3300 50  0001 C CNN
+F 3 "" H 2800 3300 50  0001 C CNN
+	1    2800 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+9V #PWR?
+U 1 1 5FB87969
+P 2800 3400
+F 0 "#PWR?" H 2800 3250 50  0001 C CNN
+F 1 "+9V" V 2815 3528 50  0000 L CNN
+F 2 "" H 2800 3400 50  0001 C CNN
+F 3 "" H 2800 3400 50  0001 C CNN
+	1    2800 3400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4400 2400 2    50   Input ~ 0
+D4-R-Sw
+$Comp
+L ESP8266:NodeMCU_1.0_(ESP-12E) U?
+U 1 1 5FB839C8
+P 3600 2700
+F 0 "U?" H 3600 3787 60  0000 C CNN
+F 1 "NodeMCU_1.0_(ESP-12E)" H 3600 3681 60  0000 C CNN
+F 2 "" H 3000 1850 60  0000 C CNN
+F 3 "" H 3000 1850 60  0000 C CNN
+	1    3600 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 2200 2    50   Input ~ 0
+D2-G-Sw
+$Comp
+L Switch:SW_DIP_x03 SW?
+U 1 1 5FB89BE0
+P 5350 3250
+F 0 "SW?" H 5350 3717 50  0000 C CNN
+F 1 "SW_DIP_x03" H 5350 3626 50  0000 C CNN
+F 2 "" H 5350 3250 50  0001 C CNN
+F 3 "~" H 5350 3250 50  0001 C CNN
+	1    5350 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5050 3050 0    50   Input ~ 0
+D2-G-Sw
+Text GLabel 4400 2300 2    50   Input ~ 0
+D3-B-Sw
+Text GLabel 5050 3150 0    50   Input ~ 0
+D3-B-Sw
+Text GLabel 5050 3250 0    50   Input ~ 0
+D4-R-Sw
+Text GLabel 5650 3050 2    50   Input ~ 0
+Sw-G
+Text GLabel 5650 3150 2    50   Input ~ 0
+Sw-B
+Text GLabel 5650 3250 2    50   Input ~ 0
+Sw-R
+Text GLabel 6200 2700 0    50   Input ~ 0
+Sw-G
+Text GLabel 6200 3700 0    50   Input ~ 0
+Sw-B
+Text GLabel 6200 1750 0    50   Input ~ 0
+Sw-R
 $EndSCHEMATC
