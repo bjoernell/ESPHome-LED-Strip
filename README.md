@@ -7,3 +7,4 @@ This is the repository for my Home Assistant RGB LED-Strip Controller based on E
 - 8 port dip switch
 - 9V 2A Power Supply
 - Standard switch
+![alt text](https://github.com/bjoernell/ESPHome-LED-Strip/blob/master/KiCAD/Circuit%20image.png)
