@@ -63,17 +63,6 @@ F 3 "~" H 8250 2650 50  0001 C CNN
 	1    8250 2650
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+9V #PWR?
-U 1 1 5FB79B0C
-P 8050 2850
-F 0 "#PWR?" H 8050 2700 50  0001 C CNN
-F 1 "+9V" V 8065 2978 50  0000 L CNN
-F 2 "" H 8050 2850 50  0001 C CNN
-F 3 "" H 8050 2850 50  0001 C CNN
-	1    8050 2850
-	0    -1   -1   0   
-$EndComp
 Text GLabel 6800 1550 1    50   Input ~ 0
 R_LED
 Text GLabel 6800 2500 1    50   Input ~ 0
@@ -157,17 +146,6 @@ F 3 "" H 2800 3300 50  0001 C CNN
 	1    2800 3300
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+9V #PWR?
-U 1 1 5FB87969
-P 2800 3400
-F 0 "#PWR?" H 2800 3250 50  0001 C CNN
-F 1 "+9V" V 2815 3528 50  0000 L CNN
-F 2 "" H 2800 3400 50  0001 C CNN
-F 3 "" H 2800 3400 50  0001 C CNN
-	1    2800 3400
-	0    -1   -1   0   
-$EndComp
 Text GLabel 4400 2400 2    50   Input ~ 0
 D4-R-Sw
 $Comp
@@ -214,4 +192,48 @@ Text GLabel 6200 3700 0    50   Input ~ 0
 Sw-B
 Text GLabel 6200 1750 0    50   Input ~ 0
 Sw-R
+$Comp
+L Switch:SW_DIP_x01 SW?
+U 1 1 5FB8FACD
+P 1850 3400
+F 0 "SW?" H 1850 3667 50  0000 C CNN
+F 1 "SW_DIP_x01" H 1850 3576 50  0000 C CNN
+F 2 "" H 1850 3400 50  0001 C CNN
+F 3 "~" H 1850 3400 50  0001 C CNN
+	1    1850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR?
+U 1 1 5FB911D2
+P 1550 3400
+F 0 "#PWR?" H 1550 3250 50  0001 C CNN
+F 1 "+9V" V 1565 3528 50  0000 L CNN
+F 2 "" H 1550 3400 50  0001 C CNN
+F 3 "" H 1550 3400 50  0001 C CNN
+	1    1550 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+9VA #PWR?
+U 1 1 5FB91FE5
+P 2150 3400
+F 0 "#PWR?" H 2150 3275 50  0001 C CNN
+F 1 "+9VA" V 2165 3528 50  0000 L CNN
+F 2 "" H 2150 3400 50  0001 C CNN
+F 3 "" H 2150 3400 50  0001 C CNN
+	1    2150 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+9VA #PWR?
+U 1 1 5FB921DC
+P 8050 2850
+F 0 "#PWR?" H 8050 2725 50  0001 C CNN
+F 1 "+9VA" V 8065 2977 50  0000 L CNN
+F 2 "" H 8050 2850 50  0001 C CNN
+F 3 "" H 8050 2850 50  0001 C CNN
+	1    8050 2850
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
