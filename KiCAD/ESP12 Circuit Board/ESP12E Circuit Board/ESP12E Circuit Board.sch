@@ -42,7 +42,7 @@ U 1 1 5FCE7FF2
 P 4450 1300
 F 0 "1uF1" H 4568 1346 50  0000 L CNN
 F 1 "CP" H 4568 1255 50  0000 L CNN
-F 2 "" H 4488 1150 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4488 1150 50  0001 C CNN
 F 3 "~" H 4450 1300 50  0001 C CNN
 	1    4450 1300
 	1    0    0    -1  
@@ -60,7 +60,7 @@ U 1 1 5FCEA301
 P 5700 1300
 F 0 "10uF1" H 5818 1346 50  0000 L CNN
 F 1 "CP" H 5818 1255 50  0000 L CNN
-F 2 "" H 5738 1150 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5738 1150 50  0001 C CNN
 F 3 "~" H 5700 1300 50  0001 C CNN
 	1    5700 1300
 	1    0    0    -1  
@@ -71,7 +71,7 @@ U 1 1 5FCEB39C
 P 5400 1300
 F 0 "470pF1" H 5518 1346 50  0000 L CNN
 F 1 "CP" H 5518 1255 50  0000 L CNN
-F 2 "" H 5438 1150 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5438 1150 50  0001 C CNN
 F 3 "~" H 5400 1300 50  0001 C CNN
 	1    5400 1300
 	1    0    0    -1  
@@ -177,17 +177,6 @@ F 3 "" H 2950 1100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Transistor_BJT:BD437 Q1
-U 1 1 5FCF5DB5
-P 7900 1450
-F 0 "Q1" H 8092 1496 50  0000 L CNN
-F 1 "BD437" H 8092 1405 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 8100 1375 50  0001 L CIN
-F 3 "http://www.cdil.com/datasheets/bd433_42.pdf" H 7900 1450 50  0001 L CNN
-	1    7900 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0109
 U 1 1 5FCFD12F
 P 8000 1650
@@ -204,7 +193,7 @@ U 1 1 5FCFDF38
 P 9850 2700
 F 0 "J1" H 9822 2582 50  0000 R CNN
 F 1 "Conn_01x04_Male" H 9822 2673 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 9850 2700 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 9850 2700 50  0001 C CNN
 F 3 "~" H 9850 2700 50  0001 C CNN
 	1    9850 2700
 	-1   0    0    1   
@@ -226,30 +215,8 @@ Text GLabel 9650 2600 0    50   Input ~ 0
 G_LED
 Text GLabel 9650 2700 0    50   Input ~ 0
 B_LED
-$Comp
-L Device:R R1
-U 1 1 5FD03961
-P 7550 1450
-F 0 "R1" V 7343 1450 50  0000 C CNN
-F 1 "1500" V 7434 1450 50  0000 C CNN
-F 2 "" V 7480 1450 50  0001 C CNN
-F 3 "~" H 7550 1450 50  0001 C CNN
-	1    7550 1450
-	0    1    1    0   
-$EndComp
 Text GLabel 8000 1250 1    50   Input ~ 0
 R_LED
-$Comp
-L Transistor_BJT:BD437 Q2
-U 1 1 5FD0860F
-P 7900 2650
-F 0 "Q2" H 8092 2696 50  0000 L CNN
-F 1 "BD437" H 8092 2605 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 8100 2575 50  0001 L CIN
-F 3 "http://www.cdil.com/datasheets/bd433_42.pdf" H 7900 2650 50  0001 L CNN
-	1    7900 2650
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0111
 U 1 1 5FD08615
@@ -259,28 +226,6 @@ F 1 "GND" H 8005 2677 50  0000 C CNN
 F 2 "" H 8000 2850 50  0001 C CNN
 F 3 "" H 8000 2850 50  0001 C CNN
 	1    8000 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5FD0861B
-P 7550 2650
-F 0 "R2" V 7343 2650 50  0000 C CNN
-F 1 "1500" V 7434 2650 50  0000 C CNN
-F 2 "" V 7480 2650 50  0001 C CNN
-F 3 "~" H 7550 2650 50  0001 C CNN
-	1    7550 2650
-	0    1    1    0   
-$EndComp
-$Comp
-L Transistor_BJT:BD437 Q3
-U 1 1 5FD09C1D
-P 7900 3750
-F 0 "Q3" H 8092 3796 50  0000 L CNN
-F 1 "BD437" H 8092 3705 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 8100 3675 50  0001 L CIN
-F 3 "http://www.cdil.com/datasheets/bd433_42.pdf" H 7900 3750 50  0001 L CNN
-	1    7900 3750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -294,19 +239,95 @@ F 3 "" H 8000 3950 50  0001 C CNN
 	1    8000 3950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R3
-U 1 1 5FD09C29
-P 7550 3750
-F 0 "R3" V 7343 3750 50  0000 C CNN
-F 1 "1500" V 7434 3750 50  0000 C CNN
-F 2 "" V 7480 3750 50  0001 C CNN
-F 3 "~" H 7550 3750 50  0001 C CNN
-	1    7550 3750
-	0    1    1    0   
-$EndComp
 Text GLabel 8000 2450 1    50   Input ~ 0
 G_LED
 Text GLabel 8000 3550 1    50   Input ~ 0
 B_LED
+$Comp
+L Device:R_Pack03 RN1
+U 1 1 5FCE9E86
+P 7050 2650
+F 0 "RN1" V 6733 2650 50  0000 C CNN
+F 1 "1500" V 6824 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_Array_Concave_4x0603" V 7325 2650 50  0001 C CNN
+F 3 "~" H 7050 2650 50  0001 C CNN
+	1    7050 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 3750 7250 3750
+Wire Wire Line
+	7250 3750 7250 2750
+Wire Wire Line
+	7700 2650 7250 2650
+Wire Wire Line
+	7700 1450 7250 1450
+Wire Wire Line
+	7250 1450 7250 2550
+$Comp
+L BCP54-16:BCP56 Q1
+U 1 1 5FCF9E84
+P 7900 1450
+F 0 "Q1" H 8091 1496 50  0000 L CNN
+F 1 "BCP56" H 8091 1405 50  0000 L CNN
+F 2 "BCP54-16 footprint:SOT230P700X180-4N" H 8100 1375 50  0001 L CIN
+F 3 "http://cache.nxp.com/documents/data_sheet/BCP56_BCX56_BC56PA.pdf?pspll=1" H 7900 1450 50  0001 L CNN
+	1    7900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L BCP54-16:BCP56 Q2
+U 1 1 5FCFB05A
+P 7900 2650
+F 0 "Q2" H 8091 2696 50  0000 L CNN
+F 1 "BCP56" H 8091 2605 50  0000 L CNN
+F 2 "BCP54-16 footprint:SOT230P700X180-4N" H 8100 2575 50  0001 L CIN
+F 3 "http://cache.nxp.com/documents/data_sheet/BCP56_BCX56_BC56PA.pdf?pspll=1" H 7900 2650 50  0001 L CNN
+	1    7900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L BCP54-16:BCP56 Q3
+U 1 1 5FCFC441
+P 7900 3750
+F 0 "Q3" H 8091 3796 50  0000 L CNN
+F 1 "BCP56" H 8091 3705 50  0000 L CNN
+F 2 "BCP54-16 footprint:SOT230P700X180-4N" H 8100 3675 50  0001 L CIN
+F 3 "http://cache.nxp.com/documents/data_sheet/BCP56_BCX56_BC56PA.pdf?pspll=1" H 7900 3750 50  0001 L CNN
+	1    7900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5FD062DA
+P 4950 2250
+F 0 "J2" H 4978 2226 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 4978 2135 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4950 2250 50  0001 C CNN
+F 3 "~" H 4950 2250 50  0001 C CNN
+	1    4950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5FD07709
+P 4750 2350
+F 0 "#PWR0113" H 4750 2100 50  0001 C CNN
+F 1 "GND" H 4755 2177 50  0000 C CNN
+F 2 "" H 4750 2350 50  0001 C CNN
+F 3 "" H 4750 2350 50  0001 C CNN
+	1    4750 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0114
+U 1 1 5FD08397
+P 4750 2250
+F 0 "#PWR0114" H 4750 2100 50  0001 C CNN
+F 1 "+9V" H 4765 2423 50  0000 C CNN
+F 2 "" H 4750 2250 50  0001 C CNN
+F 3 "" H 4750 2250 50  0001 C CNN
+	1    4750 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
