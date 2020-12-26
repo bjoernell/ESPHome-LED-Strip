@@ -1,0 +1,44 @@
+esphome:
+  name: esphome_bjoern
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: "your ssid"
+  password: "your password"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "your ssid"
+    password: "your password"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+light:
+  - platform: rgb
+    name: "Björn Schreibtisch LED"
+    red: output_component1
+    green: output_component2
+    blue: output_component3
+    effects:
+      - flicker:
+      - strobe:
+
+# Example output entry
+output:
+  - platform: esp8266_pwm
+    id: output_component1
+    pin: D4
+  - platform: esp8266_pwm
+    id: output_component2
+    pin: D2
+  - platform: esp8266_pwm
+    id: output_component3
+    pin: D3
