@@ -1,0 +1,131 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP8266:ESP-12F U?
+U 1 1 601A7596
+P 5300 3700
+F 0 "U?" H 5300 4465 50  0000 C CNN
+F 1 "ESP-12F" H 5300 4374 50  0000 C CNN
+F 2 "" H 5300 3700 50  0001 C CNN
+F 3 "" H 5300 3700 50  0001 C CNN
+	1    5300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 601A9821
+P 7100 2700
+F 0 "#PWR?" H 7100 2550 50  0001 C CNN
+F 1 "+3V3" H 7115 2873 50  0000 C CNN
+F 2 "" H 7100 2700 50  0001 C CNN
+F 3 "" H 7100 2700 50  0001 C CNN
+	1    7100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601AC128
+P 7100 5000
+F 0 "#PWR?" H 7100 4750 50  0001 C CNN
+F 1 "GND" H 7105 4827 50  0000 C CNN
+F 2 "" H 7100 5000 50  0001 C CNN
+F 3 "" H 7100 5000 50  0001 C CNN
+	1    7100 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4100 7100 5000
+Wire Wire Line
+	4400 4100 3600 4100
+Wire Wire Line
+	3600 4100 3600 3600
+$Comp
+L Device:R R?
+U 1 1 601AF133
+P 4000 3600
+F 0 "R?" V 4207 3600 50  0000 C CNN
+F 1 "10k" V 4116 3600 50  0000 C CNN
+F 2 "" V 3930 3600 50  0001 C CNN
+F 3 "~" H 4000 3600 50  0001 C CNN
+	1    4000 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601AFF7C
+P 4000 3400
+F 0 "R?" V 4207 3400 50  0000 C CNN
+F 1 "10k" V 4116 3400 50  0000 C CNN
+F 2 "" V 3930 3400 50  0001 C CNN
+F 3 "~" H 4000 3400 50  0001 C CNN
+	1    4000 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601B028A
+P 6600 3800
+F 0 "R?" V 6807 3800 50  0000 C CNN
+F 1 "10k" V 6716 3800 50  0000 C CNN
+F 2 "" V 6530 3800 50  0001 C CNN
+F 3 "~" H 6600 3800 50  0001 C CNN
+	1    6600 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 4100 6750 4100
+Wire Wire Line
+	3600 2700 6750 2700
+Wire Wire Line
+	6200 3800 6450 3800
+Wire Wire Line
+	4150 3600 4400 3600
+Wire Wire Line
+	4150 3400 4400 3400
+Wire Wire Line
+	3850 3400 3600 3400
+Connection ~ 3600 3400
+Wire Wire Line
+	3600 3400 3600 2700
+Wire Wire Line
+	3850 3600 3600 3600
+Connection ~ 3600 3600
+Wire Wire Line
+	3600 3600 3600 3400
+Wire Wire Line
+	6750 3800 6750 2700
+Connection ~ 6750 2700
+Wire Wire Line
+	6750 2700 7100 2700
+$Comp
+L Device:R R?
+U 1 1 601B359F
+P 6600 4000
+F 0 "R?" V 6807 4000 50  0000 C CNN
+F 1 "10k" V 6716 4000 50  0000 C CNN
+F 2 "" V 6530 4000 50  0001 C CNN
+F 3 "~" H 6600 4000 50  0001 C CNN
+	1    6600 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 4000 6450 4000
+Wire Wire Line
+	6750 4000 6750 4100
+Connection ~ 6750 4100
+Wire Wire Line
+	6750 4100 7100 4100
+$EndSCHEMATC
